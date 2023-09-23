@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
+*{
+    margin: 0;
+    padding : 0;
+    font-family: "Comfortaa", cursive;
+}
+
+header, footer{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.ma-classe{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    font-size: 200%;
+    background-color: white;
+}
+
+.ma-classe>*{
+    text-align: center;
+    height: 100px;
+    border-color: black;
+    background-color: black;
+    color: white;
+}
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
