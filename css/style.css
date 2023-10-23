@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
 *{
-    margin: 0;
-    padding : 0;
     font-family: "Comfortaa", cursive;
 }
 
 header, footer{
+    margin: 0;
+    padding : 0;
+    padding: 2% 4%;
+}
+
+footer{
     text-align: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 4%;
-    padding-right: 4%;
 }
 
 .prevent-select {
@@ -19,28 +19,32 @@ header, footer{
     user-select: none; /* Standard syntax */
 }
 
-.ma-classe{
+.separator-part{
+    background-color: lightgray;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 0.1px;
+}
+
+#detail-part{
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 200%;
 }
 
-.ma-classe>div{
+#detail-part>div{
     width: 90%;
     border-radius: 20px;
     margin: 20px;
     text-align: center;
     color: black;
     padding: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-.ma-classe>div *{
-    text-decoration: none;
-}
-
-.ma-classe>div:hover{
+#detail-part>div:hover{
     background-color: black;
     color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }

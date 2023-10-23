@@ -1,0 +1,15 @@
+#intro-index{
+    display: flex;
+    padding: 1%;
+    width: 100%;
+    justify-content: space-around;
+    background-color: black;
+}
+
+#intro-text{
+    background-color: red;
+}
+
+#intro-illu{
+    background-color: purple;
+}

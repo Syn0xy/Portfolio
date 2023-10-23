@@ -1,0 +1,15 @@
+#contact-part{
+    text-align: center;
+}
+
+#contact-part>p{
+    font-size: 200%;
+}
+
+#contact-part>a{
+    background-color: white;
+    font-size: 150%;
+    text-decoration: none;
+    padding: 1%;
+    border-radius: 25px;
+}
