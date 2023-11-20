@@ -3,12 +3,6 @@
     font-family: "Comfortaa", cursive;
 }
 
-header, footer{
-    margin: 0;
-    padding : 0;
-    padding: 2% 4%;
-}
-
 footer{
     text-align: center;
 }
@@ -24,38 +18,40 @@ footer{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    padding: 0.1px;
+    padding: 1px;
 }
 
 #detail-part{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 200%;
+    font-size: 125%;
+}
+
+#detail-part *{
+    margin: 1%;
 }
 
 #detail-part>div{
+    width: 70%;
     display: flex;
     flex-direction: row;
-    width: 90%;
-    border-radius: 35px;
-    margin: 20px;
-    text-align: center;
+    align-items: center;
     color: black;
-    padding: 10px;
+    border-radius: 35px;
+    padding: 5px;
+}
+
+#detail-part>div>p:nth-child(2n+1){
+    text-align: right;
 }
 
 #detail-part>div>img{
     border-radius: 25px;
-    width: 40%;
-}
-
-#detail-part>div>p{
-    align-items: center;
+    max-height: 200px;
+    width: max-content;
 }
 
 #detail-part>div:hover{
-    background-color: black;
-    color: white;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }

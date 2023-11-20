@@ -1,15 +1,16 @@
 #intro-index{
     display: flex;
-    padding: 1%;
-    width: 100%;
-    justify-content: space-around;
-    background-color: black;
-}
-
-#intro-text{
-    background-color: red;
+    margin: 0 5%;
+    justify-content: space-between;
 }
 
 #intro-illu{
-    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro-illu>img{
+    width: 100px;
+    height: 100px;
 }

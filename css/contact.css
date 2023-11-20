@@ -3,12 +3,12 @@
 }
 
 #contact-part>p{
-    font-size: 200%;
+    font-size: 150%;
 }
 
 #contact-part>a{
     background-color: white;
-    font-size: 150%;
+    font-size: 100%;
     text-decoration: none;
     padding: 1%;
     border-radius: 25px;
