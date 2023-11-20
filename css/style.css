@@ -35,12 +35,23 @@ footer{
 }
 
 #detail-part>div{
+    display: flex;
+    flex-direction: row;
     width: 90%;
-    border-radius: 20px;
+    border-radius: 35px;
     margin: 20px;
     text-align: center;
     color: black;
     padding: 10px;
+}
+
+#detail-part>div>img{
+    border-radius: 25px;
+    width: 40%;
+}
+
+#detail-part>div>p{
+    align-items: center;
 }
 
 #detail-part>div:hover{
