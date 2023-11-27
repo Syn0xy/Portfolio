@@ -21,11 +21,48 @@ footer{
     padding: 1px;
 }
 
+.button{
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bolder;
+    padding: 1em;
+    background-color: white;
+    color: rgb(127, 127, 255);
+    border: solid 0.1em rgb(127, 127, 255);
+    border-radius: 2em;
+}
+
+.button>img{
+    width: 1em;
+    height: 1em;
+    color: rgb(127, 127, 255);
+}
+
+.button-full{
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bolder;
+    padding: 1em;
+    color: white;
+    background: linear-gradient(135deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border-radius: 2em;
+    transition: 0.25s;
+}
+
+.button:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+.button-full:hover{
+    background: linear-gradient(315deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
 #detail-part{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 125%;
 }
 
 #detail-part *{
@@ -54,4 +91,14 @@ footer{
 
 #detail-part>div:hover{
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    background-color: whitesmoke;
+}
+
+.detail-title{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.detail-desc{
+    font-size:large;
 }
