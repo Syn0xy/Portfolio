@@ -1,0 +1,48 @@
+#detail-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#detail-part *{
+    margin: 1%;
+}
+
+#detail-part>div{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    border-radius: 3em;
+    padding: 5px;
+}
+
+#detail-part>div>p:nth-child(2n+1){
+    text-align: right;
+}
+
+#detail-part>div>img{
+    border-radius: 2em;
+    max-height: 15em;
+    width: max-content;
+}
+
+#detail-part>div:hover{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+    background-color: whitesmoke;
+}
+
+#detail-part>div:nth-child(2n){
+    text-align: right;
+}
+
+.title{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.desc{
+    font-size:large;
+    padding-bottom: 1em;
+}

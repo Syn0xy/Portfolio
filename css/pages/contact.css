@@ -1,0 +1,60 @@
+#about, #contact-part{
+    margin: 1%;
+}
+
+#about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#about>img{
+    width: 30%;
+    height: fit-content;
+    color: white;
+}
+
+#about-info{
+    width: 50%;
+}
+
+#about-info>.title{
+    font-size: xx-large;
+}
+
+#contact-part{
+    display: flex;
+    flex-direction: row;
+}
+
+#contact-part *{
+    margin: 0.5em;
+}
+
+#contact-part>*{
+    position: relative;
+    width: 20%;
+    background-color: black;
+    border-radius: 15px;
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    font-size: medium;
+    color: gray;
+}
+
+#contact-part>*>img{
+    width: 2em;
+}
+
+#contact-part>*>.title{
+    font-size: x-large;
+    color: white;
+}
+
+#contact-part .export{
+    width: 1.5em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

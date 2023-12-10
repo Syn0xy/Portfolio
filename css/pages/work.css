@@ -1,0 +1,113 @@
+#work-part{
+    margin: 0 5%;
+}
+
+#work-part>.title{
+    font-size: xx-large;
+}
+
+#work-skills{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.work-skill{
+    margin: 0.25em;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-skill:hover{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+.work-skill>.desc{
+    display: none;
+    margin: 1em;
+    position: absolute;
+}
+
+.work-skill:hover>.desc{
+    display: block;
+}
+
+.skill-language{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.skill-language>img{
+    margin: 1em;
+    width: 2.5em;
+}
+
+#work-projects{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1em;
+    transition: all 0.4s ease-out;
+}
+
+#work-projects>div{
+    aspect-ratio: 1 / 1;
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse;
+    margin: 1em;
+    align-items: center;
+}
+
+#work-projects>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+#work-projects>div:hover .desc{
+    display: block;
+}
+
+#work-projects>div:hover .work-project-desc{
+    background-color: rgba(30, 30, 80, 0.5);
+}
+
+.work-project-desc{
+    border-radius: 1em;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    color: lightgray;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.work-project-desc>.title{
+    font-size: x-large;
+    color: white;
+}
+
+.work-project-desc>.desc{
+    display: none;
+}
+
+#work-projects .school-work{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: yellow;
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: 1em;
+    font-size: small;
+}

@@ -2,16 +2,22 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3%;
+    margin: 2%;
 }
 
 .home-button{
     display: flex;
     font-size: 150%;
     align-items: center;
-    color: black;
+    font-weight: bold;
+    color:rgb(30, 30, 30);
     border-radius: 25px;
     padding: 1%;
+}
+
+.home-button>img{
+    width: 3em;
+    margin: 0.5em;
 }
 
 .home-button:hover{
@@ -24,10 +30,10 @@ header{
 }
 
 .dropdown>span{
-    font-size: 125%;
-    border-radius: 25px;
     color: black;
-    padding: 10px 20px;
+    font-size: large;
+    border-radius: 25px;
+    padding: 0.5em 1em;
 }
 
 .dropdown>span, .dropdown-content{
@@ -38,10 +44,7 @@ header{
 .dropdown>span:hover{
     background-color: black;
     color: white;
-}
-
-.dropdown>span:hover .icon-menu>*{
-    background-color: white;
+    transition: all 0.4s ease;
 }
 
 .dropdown:hover .dropdown-content{
@@ -50,39 +53,41 @@ header{
 
 .dropdown-content{
     display: none;
-    margin-top: 10px;
-    margin-left: -60px;
-    width: 200px;
-    list-style: none;
+    margin-top: 9px;
+    margin-left: -9.5em;
+    width: 15em;
     position: absolute;
-    text-align: center;
-    padding: 1%;
-    border-radius: 20px;
+    border-radius: 25px;
     border-style: none;
-    background: none;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.dropdown-content>li{
-    line-height: 250%;
-}
-
-.dropdown-content>li{
-    border-radius: 20px;
-    padding: 10px;
-    background: none;
-}
-
-.dropdown-content>li>a{
-    text-decoration: none;
+.dropdown-content>a{
     color: black;
+    display: flex;
+    justify-content: center;
+    margin: 0.5em;
+    padding: 1em;
+    border-radius: calc(25px - 0.5em);
+    text-decoration: none;
 }
 
-.dropdown-content>li:hover a{
-    color: white;
-}
-
-.dropdown-content>li:hover{
+.dropdown-content>a:hover{
     background-color: black;
     color: white;
+    transition: all 0.2s ease;
+}
+
+#contact-part{
+    text-align: center;
+    font-weight: bolder;
+}
+
+#contact-part>p{
+    font-size: 150%;
+}
+
+#contact-button:hover{
+    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
 }

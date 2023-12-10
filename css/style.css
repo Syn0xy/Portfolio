@@ -7,6 +7,10 @@ footer{
     text-align: center;
 }
 
+#copyright{
+    margin: 1.5em;
+}
+
 .prevent-select {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
@@ -26,6 +30,7 @@ footer{
     text-decoration: none;
     font-size: medium;
     font-weight: bolder;
+    margin: 2%;
     padding: 1em;
     background-color: white;
     color: rgb(127, 127, 255);
@@ -44,6 +49,7 @@ footer{
     text-decoration: none;
     font-size: medium;
     font-weight: bolder;
+    margin: 1em;
     padding: 1em;
     color: white;
     background: linear-gradient(135deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
@@ -57,48 +63,4 @@ footer{
 
 .button-full:hover{
     background: linear-gradient(315deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-}
-
-#detail-part{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#detail-part *{
-    margin: 1%;
-}
-
-#detail-part>div{
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: black;
-    border-radius: 35px;
-    padding: 5px;
-}
-
-#detail-part>div>p:nth-child(2n+1){
-    text-align: right;
-}
-
-#detail-part>div>img{
-    border-radius: 25px;
-    max-height: 200px;
-    width: max-content;
-}
-
-#detail-part>div:hover{
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-    background-color: whitesmoke;
-}
-
-.detail-title{
-    font-size: x-large;
-    font-weight: bolder;
-}
-
-.detail-desc{
-    font-size:large;
 }
