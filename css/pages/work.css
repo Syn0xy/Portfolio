@@ -18,7 +18,7 @@
 }
 
 .work-skill:hover{
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
     border-radius: 25px;
 }
 
@@ -52,7 +52,7 @@
     transition: all 0.4s ease-out;
 }
 
-#work-projects>div{
+.work-project{
     aspect-ratio: 1 / 1;
     display: flex;
     position: relative;
@@ -61,7 +61,7 @@
     align-items: center;
 }
 
-#work-projects>div>img{
+.work-project>img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -69,15 +69,15 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
-#work-projects>div:hover .desc{
+.work-project-intro:hover>.desc{
     display: block;
 }
 
-#work-projects>div:hover .work-project-desc{
+.work-project:hover .work-project-intro{
     background-color: rgba(30, 30, 80, 0.5);
 }
 
-.work-project-desc{
+.work-project-intro{
     border-radius: 1em;
     width: 100%;
     height: 100%;
@@ -92,12 +92,12 @@
     font-weight: bolder;
 }
 
-.work-project-desc>.title{
+.work-project-intro>.title{
     font-size: x-large;
     color: white;
 }
 
-.work-project-desc>.desc{
+.work-project-intro>.desc{
     display: none;
 }
 
@@ -110,4 +110,60 @@
     margin: 1em;
     border-radius: 1em;
     font-size: small;
+}
+
+.work-project:hover .work-project-panel{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    border-radius: 2em;
+    background-color: black;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+}
+
+.work-project-panel{
+    display: none;
+}
+
+.work-project-panel>.title, .work-project-panel>.desc{
+    width: max-content  ;
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 1em;
+    border-radius: inherit;
+}
+
+.work-project-panel>.title{
+    text-align: center;
+}
+
+.work-project-panel>.desc{
+}
+
+.work-project-panel>img{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.work-project-button{
+    position: absolute;
+    z-index: 2;
+    color: black;
+    background-color: white;
+    padding: 1em 2em;
+    border-radius: inherit;
+    bottom: 1em;
+    right: 1em;
+    text-decoration: none;
 }
