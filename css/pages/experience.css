@@ -1,0 +1,16 @@
+#experience-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+#experience-part>img{
+    width: 35%;
+    height: fit-content;
+}
+
+#experience-part .download{
+    width: 1em;
+    height: min-content;
+}
