@@ -138,6 +138,7 @@
 .work-project-panel>.title{
     padding: 1em;
     margin: 1em;
+    font-weight: bolder;
     text-align: center;
     background-color: white;
     border-radius: inherit;
@@ -187,6 +188,7 @@
 }
 
 .work-project-button>.export{
-    width: 1.5em;
+    width: 1.25em;
+    height: fit-content;
     padding-left: 0.5em;
 }
