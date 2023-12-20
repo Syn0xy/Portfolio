@@ -15,7 +15,7 @@
     align-items: center;
     color: black;
     border-radius: 3em;
-    padding: 5px;
+    padding: 0.5em;
 }
 
 #detail-part>div>p:nth-child(2n+1){
@@ -23,7 +23,7 @@
 }
 
 #detail-part>div>img{
-    border-radius: 2em;
+    border-radius: calc(2.5em - 1%);
     max-height: 15em;
     width: max-content;
 }
