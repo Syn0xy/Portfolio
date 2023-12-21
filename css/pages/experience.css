@@ -1,16 +1,68 @@
 #experience-part{
+    margin: 2% 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2em;
+}
+
+#parcours-part{
+    display: grid;
+    background-color: rgb(225, 225, 225);
+    border-radius: 2em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.parcours{
+    position: relative;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 2em;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.parcours:hover{
+    background-color: whitesmoke;
+}
+
+.parcours>.map{
+    border-radius: 2em;
+    position: absolute;
+    width: calc(100% - 2em);
+    bottom: 1em;
+    height: calc(50% - 2em);
+    border: 0;
+}
+
+.parcours>.date{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.parcours>.title{
+    text-align: center;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+#cv-part{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5%;
+    background-color: rgb(225, 225, 225);
+    border-radius: 2em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-#experience-part>img{
-    width: 35%;
+#cv-part>img{
+    margin: 2em;
+    width: 80%;
     height: fit-content;
+    border-radius: 1em;
 }
 
-#experience-part .download{
+#cv-part .download{
     width: 1em;
     height: min-content;
 }
